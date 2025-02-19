@@ -45,7 +45,7 @@
 }
 
 .dark-background {
-  --background-color: #060606;
+  --background-color: #194265;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #252525;
@@ -876,6 +876,10 @@ section,
     font-size: 18px;
     line-height: 24px;
   }
+}
+
+#hero img{
+  opacity: 30%;
 }
 
 .hero .btn-get-started {
