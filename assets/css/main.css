@@ -1065,6 +1065,45 @@ section,
 /*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
+.client-slider {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+  background-color: #194265; /* Adjust background */
+  padding: 20px 0;
+}
+
+/* Scrolling track */
+.client-track {
+  display: flex;
+  width: calc(200px * 10); /* Adjust based on the number of logos */
+  animation: scroll 15s linear infinite;
+}
+
+/* Client logos */
+.client-logo {
+  flex: 0 0 auto;
+  width: 200px; /* Adjust size as needed */
+  margin: 0 20px; /* Space between logos */
+}
+
+.client-logo img {
+  max-width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+
+.client-logo img:hover {
+  filter: grayscale(0%);
+}
+
+/* Animation */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
 .clients {
   padding: 20px 0;
 }
